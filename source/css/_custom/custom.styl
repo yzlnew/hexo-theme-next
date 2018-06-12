@@ -15,6 +15,7 @@ $violet = #6c71c4
 $blue   = #268bd2
 $cyan   = #2aa198
 $green  = #859900
+$summeryellow = #ffa700
 body {
   background-color: $000000
   /*background: url(/uploads/background.jpg);*/
@@ -22,6 +23,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
+}
+
+.headband {
+    height: 0px;
+    background-image: linear-gradient(90deg, $summeryellow 0%, $red 100%);
 }
 // 背景色
 .content-wrap{
@@ -35,25 +41,25 @@ code {
 // brand 背景
 .site-meta {
     // background-image: linear-gradient(90deg, $yellow 0%, $orange 15%, $red 30%, $magenta 44%, $violet 58%, $blue 72%, $cyan 86%, $green 100%);
-    background-image: linear-gradient(90deg, $base03 0%, $red 100%)
+    background-image: linear-gradient(90deg, $summeryellow 0%, $red 100%)
 }
 // 菜单超链接字体大小
 .menu .menu-item a {
-    color: $base01
+    color: $base03
     font-size: 14px;
 }
 // 页面文章标题颜色
 .posts-expand .post-title-link {
-    color: $base01;
+    color: $base03;
 }
 // 文章标题字体大小
 .posts-expand .post-title {
     font-size: 24px;
-    color: $base01;
+    color: $base03;
 }
 // 文章标题动态效果
 .posts-expand .post-title-link::before {
-    background-image: linear-gradient(90deg, $base03 0%, $red 100%);
+    background-image: linear-gradient(90deg, $summeryellow 0%, $red 100%);
 }
 // 文章元数据（site-meta）字体
 .posts-expand .post-meta {
@@ -67,7 +73,7 @@ code {
 }
 // 阅读更多
 .post-button .btn:hover {
-    background-image: linear-gradient(90deg, $base03 0%, $red 100%);
+    background-image: linear-gradient(90deg, $summeryellow 0%, $red 100%);
 }
 // 右下角返回顶部按钮样式
 .back-to-top {
@@ -95,7 +101,7 @@ a:hover {
 }
 // 侧栏目录链接样式
 .post-toc ol a {
-    color: $base01;
+    color: $base03;
 }
 .post-toc ol a:hover {
     color: $base1;
@@ -130,7 +136,7 @@ img:hover {
 }
 // 侧栏超链接样式（友链的样式）
 .sidebar a {
-    color: $base01;
+    color: $base03;
     border-bottom: none;
 }
 .sidebar a:hover {
