@@ -16,6 +16,7 @@ $blue   = #268bd2
 $cyan   = #2aa198
 $green  = #859900
 $summeryellow = #ffa700
+$summerorange = #ff4d00
 body {
   background-color: $000000
   /*background: url(/uploads/background.jpg);*/
@@ -58,7 +59,7 @@ code {
 }
 // 文章标题动态效果
 .posts-expand .post-title-link::before {
-    background-image: linear-gradient(90deg, $summeryellow 0%, $summeryellow 100%);
+    background-image: linear-gradient(90deg, $summeryellow 0%, $red 50%, $summeryellow 100%);
 }
 // 文章元数据（site-meta）字体
 .posts-expand .post-meta {
@@ -72,7 +73,7 @@ code {
 }
 // 阅读更多
 .post-button .btn:hover {
-    background-image: linear-gradient(90deg, $summeryellow 0%, $summeryellow 100%);
+    background-image: linear-gradient(90deg, $summerorange 0%, $summerorange 100%);
 }
 // 右下角返回顶部按钮样式
 .back-to-top {
@@ -91,7 +92,7 @@ code {
 }
 // 超链接样式
 a {
-    color: $summeryellow
+    color: $summerorange
     border-bottom-color: $base2;
 }
 a:hover {
@@ -107,8 +108,8 @@ a:hover {
 }
 // 侧栏目录链接样式之当前目录
 .post-toc .nav .active > a {
-    color: $orange;
-    border-bottom-color: $orange;
+    color: $summerorange;
+    border-bottom-color: $summerorange;
 }
 .post-toc .nav .active > a:hover {
     color: $summeryellow;
@@ -135,7 +136,7 @@ img:hover {
 }
 // 侧栏超链接样式（友链的样式）
 .sidebar a {
-    color: $summeryellow;
+    color: $summerorange;
     border-bottom: none;
 }
 .sidebar a:hover {
@@ -148,10 +149,10 @@ img:hover {
     color: $base1;
 }
 .sidebar-nav li:hover {
-    color: $summeryellow;
+    color: $summerorange;
 }
 .sidebar-nav .sidebar-nav-active {
-    color: $summeryellow;
+    color: $summerorange;
     border-bottom-color: $summeryellow;
     border-bottom-width: 1.5px;
 }
@@ -159,7 +160,7 @@ img:hover {
     color: $summeryellow;
 }
 .sidebar {
-    background-color: #ffffff;
+    background-color: $summerorange;
 }
 // 页脚
 .footer {
